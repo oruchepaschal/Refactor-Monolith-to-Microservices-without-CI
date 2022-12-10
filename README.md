@@ -20,20 +20,20 @@ The project is split into two parts:
 ### Successful Deployment
 *** Screenshots showing interaction with the app ***
 ![Image](./screenshots/appshot.png)
-![Image](./screenshots/successful_deployment_2.png)
+![Image](./screenshots/Postman_feed_endpoint.png)
 
 ### Deployment Pipeline
 ***DockerHub showing containers that you have pushed***
-![Image](./screenshots/dockerhub 1.png)
+![Image](./screenshots/dockerhub1.png)
 <br>
-![Image](./screenshots/dockerhub 2.png)
+![Image](./screenshots/dockerhub2.png)
 
 ### Kubernetes
 *** Verifies Kubernetes pods are deployed properly ***
 ```bash
 kubectl get pods
 ```
-![Image](./screenshots/k8s running pods.png)
+![Image](./screenshots/k8s_running_pods.png)
 
 ### Autoscale pods
 ***Verifies that horizontal scaling is set against CPU usage***
@@ -41,14 +41,14 @@ P.S. a metrics server had to be installed
 ```bash
 kubectl describe hpa
 ```
-![Image](./screenshots/k8s Metric server.png)
-![Image](./screenshots/Horizontal pod autoscale.png)
+![Image](./screenshots/K8s_metric_server.png)
+![Image](./screenshots/Horizontal_pod_autoscale.png)
 
 ### Backend Activity logs
 ***Verifies logging is set up with a backend application***
 ```bash
 kubectl logs {pod_name}
 ```
-![Image](./screenshots/kubectl backend log.png)
-![Image](./screenshots/kubectl backend user log.png)
+![Image](./screenshots/kubectl_backend_log.png)
+![Image](./screenshots/kubectl_backend_user_log.png)
 
